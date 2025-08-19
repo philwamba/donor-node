@@ -1,0 +1,17 @@
+{
+  "name": "donor-node",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -ws",
+    "dev": "npm run dev -w @donor-node/web",
+    "test": "echo 'no tests at root'"
+  },
+  "devDependencies": {
+    "turbo": "1.11.0"
+  }
+}
